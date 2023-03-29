@@ -42,7 +42,8 @@ button{
   padding: .5em;
 }
 .form-items button{
-  background-color: var(--orange)
+  background-color: var(--orange);
+  color: var(--black);
 }
 .form-items button:hover{
   background-color: #000000;
