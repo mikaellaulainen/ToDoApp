@@ -1,0 +1,87 @@
+:root{
+  --grey: #a4b0be;
+  --orange: #ffa500;
+  --black:#000000;
+}
+body{
+  margin:0;
+  background:linear-gradient(var(--orange), var(--black));
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+p{
+  margin: 0;
+}
+button{
+  cursor: pointer;
+}
+.todomachine{
+  min-height: 88.5vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.header{
+  text-align: center;
+  font-size: 2em;
+  font-family: Helvetica;
+  margin-bottom: 1em;
+}
+.todo-form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.form-items{
+  border: 1px solid var(--black);
+}
+.form-items button,.form-items input{
+  border: none;
+  font-size: 1.5em;
+  padding: .5em;
+}
+.form-items button{
+  background-color: var(--orange)
+}
+.form-items button:hover{
+  background-color: #000000;
+  color: var(--orange);
+}
+.todo{
+  padding: 1em;
+  display: flex;
+  font-family: Helvetica;
+  background-color: #ffffff;
+  margin-top: .3em;
+  border-radius: .3em;
+}
+.todo p{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.todo button{
+  background-color: red;
+  padding: .5em;
+  color: white;
+  margin-left: auto;
+  border: 0;
+  border-radius: .2em;
+  font-size: 1em;
+}
+.clear-all{
+  margin-top: .3em;
+  background-color: red;
+  padding: 1em;
+  color: white;
+  border: 0;
+  border-radius: .2em;
+  font-size: 1em;
+}
+@media screen and (max-width:600px){
+  .form-items button,.form-items input{
+    border: none;
+    font-size: 1em;
+    padding: .5em;
+  }
+}
